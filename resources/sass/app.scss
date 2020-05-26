@@ -1,0 +1,43 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 16.666666%;
+    height: 100%;
+    background-color: #eee;
+
+    &__top {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+    }
+
+    &__bottom {
+        display:flex;
+        justify-content: flex-start;
+        align-self: bottom;
+    }
+
+    &__name {
+        height: 100px;
+    }
+}
+
+.sidebar > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5%;
+}
